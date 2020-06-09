@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>xxx项目的测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	/*color: gray;*/
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    /*background-color: #E6E6D6; */
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    font-size:16px;
+    color: #000000;
+    text-align:center;
+    background-color: #feeeed;
+    height:40px;
+}
+#result_table td {
+    border: 1px solid #d94848;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; height:30px; }
+.passClass  { background-color: #a1faa1; height:30px;}
+.failClass  { background-color: #fac3c3; height:30px;}
+.errorClass { background-color: #faeba1; height:30px;}
+.passCase   { color: #a1faa1; }
+.failCase   { color: #fac3c3; font-weight: bold; }
+.errorCase  { color: #faeba1; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+#add by  songqin  fcl  2019-11-26
+
+ 
+
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button, select {
+    text-transform: none;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+} 
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #597ef7;
+    border-color: #597ef7;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #597ef7;
+    border-color: #597ef7;
+}
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+.btn-primary2:hover {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.btn_small {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.22857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+} 
+a{ text-decoration:none} 
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>xxx项目的测试报告</h1>
+<p class='attribute'><strong>测试人员:</strong> 曹伟</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-06-01 21:38:05</p>
+<p class='attribute'><strong>合计耗时:</strong> 0:01:03.489000</p>
+<p class='attribute'><strong>测试结果:</strong> 通过 2</p>
+
+<p class='description'>用例执行明细</p>
+</div>
+
+
+
+<p id='show_detail_line'>
+
+
+<button class="btn btn-primary" onclick="#" type="button" >概要(100.0%)</button>
+
+<button class="btn btn-success" onclick="showCase(0)" type="button" >通过(2)</button>
+
+<button class="btn btn-danger" onclick="showCase(1)" type="button" >失败(0)</button>
+
+<button class="btn btn-primary2" onclick="showCase(2)" type="button" >所有(2)</button>
+
+<!--
+<a href='javascript:showCase(0)'>通过(2)</a>
+<a href='javascript:showCase(1)'>失败(0)</a>
+<a href='javascript:showCase(2)'>所有(2)</a>
+
+-->
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+<col align='center' />
+</colgroup>
+<tr id='header_row'>
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass'>
+    <td>demo_unittest1.DemoUnittest</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>
+     <!--
+        <button onclick="showClassDetail('c1',2)" class="btn btn-success" type="button" 
+            >收起</button>
+       -->
+        <a href="javascript:showClassDetail('c1',2)">&nbsp;&nbsp;收起</a>
+        
+    </td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test001</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.1')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 46
+[['10001', '增加课程', '所有字段正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', ''], ['10002', '增加课程', '填写内容和上一条一样', '错误，课程名已存在', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10003', '增加课程', '不填写课程名，其他正常填写', '报错，缺少课程名', 'add', '{\n  "name":"",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10004', '增加课程', '不填写展示次序，其他正常填写', '报错，缺少展示次序', 'add', '{\n  "name":"大学语文{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":""\n}\n', '{"code":2}', '', ''], ['10005', '增加课程', '课程名填写20个汉字，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', ''], ['10006', '增加课程', '课程名填写21个汉字，其他正常填写', '报错，课程名长度太长', 'add', '{\n  "name":"我大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10007', '增加课程', '课程名填写10字以内，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语大学英语大学",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', ''], ['10008', '增加课程', '课程名填写1个汉字，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', ''], ['10009', '增加课程', '展示次序填写999，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"999"\n}\n', '{"code":0}', '', ''], ['10010', '增加课程', '展示次序填写1000，其他正常填写', '报错，展示次序长度太长', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"1000"\n}\n', '{"code":2}', '', ''], ['10011', '增加课程', '展示次序填写500，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"500"\n}\n', '{"code":0}', '', ''], ['10012', '增加课程', '展示次序填写0，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '{"code":0}', '', ''], ['10013', '增加课程', '展示次序为-1，其他正常填写', '报错，展示次序必须为整数', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"-1"\n}\n', '{"code":2}', '', ''], ['10014', '增加课程', '展示次序为33.3，其他正常填写', '报错，展示次序必须为整数', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"33.3"\n}\n', '{"code":2}', '', ''], ['10015', '增加课程', '课程名带有特殊字符$，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学$英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10016', '增加课程', '课程名带有特殊字符*，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学*英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10017', '增加课程', '课程名带有特殊字符&amp;，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学&amp;英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10018', '增加课程', '课程名带有标点符号。，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学。英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10019', '增加课程', '课程名带有标点符号：，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学：英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10020', '增加课程', '课程名前面有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":" 大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10021', '增加课程', '课程名后面有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学英语 ",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10022', '增加课程', '课程名中间有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学 英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', ''], ['10023', '增加课程', '展示次序填字母，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"ab"\n}\n', '{"code":2}', '', ''], ['10024', '增加课程', '展示次序填字母+数字，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"a4"\n}\n', '{"code":2}', '', ''], ['10025', '增加课程', '展示次序填标点符号逗号，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '{"code":2}', '', ''], ['10026', '删除课程', '删除的课程ID为空', '报错，课程Id不合法或不存在', 'delete', '{"id":""}', '{"code":2}', '', ''], ['10027', '删除课程', '删除的课程ID为空格', '报错，课程Id不合法或不存在', 'delete', '{"id":" "}', '{"code":2}', '', ''], ['10028', '删除课程', '删除的课程ID有特殊字符#', '报错，课程Id不合法或不存在', 'delete', '{"id":"#"}', '{"code":2}', '', ''], ['10029', '删除课程', '删除的课程ID有特殊字符%', '报错，课程Id不合法或不存在', 'delete', '{"id":"%"}', '{"code":2}', '', ''], ['10030', '删除课程', '删除的课程ID有特殊字符-', '报错，课程Id不合法或不存在', 'delete', '{"id":"-"}', '{"code":2}', '', ''], ['10031', '删除课程', '删除的课程ID为中文', '报错，课程Id不合法或不存在', 'delete', '{"id":"好"}', '{"code":2}', '', ''], ['10032', '删除课程', '删除的课程ID为任意数字和字母', '报错，课程Id不合法或不存在', 'delete', '{"id":"122abc"}', '{"code":2}', '', ''], ['10033', '删除课程', '删除的课程ID为任意数字', '报错，课程Id不合法或不存在', 'delete', '{"id":"123321"}', '{"code":2}', '', ''], ['10034', '列出课程', '页码为1，显示条数为20', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"20"}', '{"code":0}', '', ''], ['10035', '列出课程', '页码为空，显示条数正常填写', '报错，页码不能为空', 'list', '{"pagenum":"","pagesize":"20"}', '{"code":2}', '', ''], ['10036', '列出课程', '页码为1，显示条数为空', '报错，显示条数不能为空', 'list', '{"pagenum":"1","pagesize":""}', '{"code":2}', '', ''], ['10037', '列出课程', '页码为0，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"0","pagesize":"20"}', '{"code":2}', '', ''], ['10038', '列出课程', '页码为-1，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"-1","pagesize":"20"}', '{"code":2}', '', ''], ['10039', '列出课程', '页码为字母，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"a","pagesize":"20"}', '{"code":2}', '', ''], ['10040', '列出课程', '页码为很大的数，显示条数为20', '报错，页码超过显示范围', 'list', '{"pagenum":"1000","pagesize":"20"}', '{"code":2}', '', ''], ['10041', '列出课程', '页码为1，显示条数0', '报错，显示条数必须大于0', 'list', '{"pagenum":"1","pagesize":"0"}', '{"code":2}', '', ''], ['10042', '列出课程', '页码为1，显示条数1', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"1"}', '{"code":0}', '', ''], ['10043', '列出课程', '页码为1，显示条数500', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"500"}', '{"code":0}', '', ''], ['10044', '列出课程', '页码为1，显示条数1000', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"1000"}', '{"code":0}', '', ''], ['10045', '列出课程', '页码为1，显示条数1001', '报错，显示条数必须大于0', 'list', '{"pagenum":"1","pagesize":"1001"}', '{"code":2}', '', '']]
+['10001', '增加课程', '所有字段正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1558}
+{'code': 0}
+10001测试通过
+['10002', '增加课程', '填写内容和上一条一样', '错误，课程名已存在', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '同名课程存在'}
+{'code': 2}
+10002测试通过
+['10003', '增加课程', '不填写课程名，其他正常填写', '报错，缺少课程名', 'add', '{\n  "name":"",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名为空！'}
+{'code': 2}
+10003测试通过
+['10004', '增加课程', '不填写展示次序，其他正常填写', '报错，缺少展示次序', 'add', '{\n  "name":"大学语文{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":""\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须为整形数字！'}
+{'code': 2}
+10004测试通过
+['10005', '增加课程', '课程名填写20个汉字，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1559}
+{'code': 0}
+10005测试通过
+['10006', '增加课程', '课程名填写21个汉字，其他正常填写', '报错，课程名长度太长', 'add', '{\n  "name":"我大学英语大学英语大学英语大学英语大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名长度大于20！'}
+{'code': 2}
+10006测试通过
+['10007', '增加课程', '课程名填写10字以内，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语大学英语大学",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1560}
+{'code': 0}
+10007测试通过
+['10008', '增加课程', '课程名填写1个汉字，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1561}
+{'code': 0}
+10008测试通过
+['10009', '增加课程', '展示次序填写999，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"999"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1562}
+{'code': 0}
+10009测试通过
+['10010', '增加课程', '展示次序填写1000，其他正常填写', '报错，展示次序长度太长', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"1000"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须小于1000！'}
+{'code': 2}
+10010测试通过
+['10011', '增加课程', '展示次序填写500，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"500"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1563}
+{'code': 0}
+10011测试通过
+['10012', '增加课程', '展示次序填写0，其他正常填写', '正确，返回成功', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '{"code":0}', '', '']
+{'retcode': 0, 'id': 1564}
+{'code': 0}
+10012测试通过
+['10013', '增加课程', '展示次序为-1，其他正常填写', '报错，展示次序必须为整数', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"-1"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须为整形数字！'}
+{'code': 2}
+10013测试通过
+['10014', '增加课程', '展示次序为33.3，其他正常填写', '报错，展示次序必须为整数', 'add', '{\n  "name":"大学英语{{courseName}}",\n  "desc":"大学英语课程",\n  "display_idx":"33.3"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须为整形数字！'}
+{'code': 2}
+10014测试通过
+['10015', '增加课程', '课程名带有特殊字符$，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学$英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10015测试通过
+['10016', '增加课程', '课程名带有特殊字符*，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学*英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10016测试通过
+['10017', '增加课程', '课程名带有特殊字符&amp;，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学&amp;英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10017测试通过
+['10018', '增加课程', '课程名带有标点符号。，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学。英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10018测试通过
+['10019', '增加课程', '课程名带有标点符号：，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学：英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10019测试通过
+['10020', '增加课程', '课程名前面有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":" 大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10020测试通过
+['10021', '增加课程', '课程名后面有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学英语 ",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10021测试通过
+['10022', '增加课程', '课程名中间有空格，其他正常填写', '报错，课程名称不能含特殊字符及标点符号', 'add', '{\n  "name":"大学 英语",\n  "desc":"大学英语课程",\n  "display_idx":"4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '课程名包含特殊字符！'}
+{'code': 2}
+10022测试通过
+['10023', '增加课程', '展示次序填字母，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"ab"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须为整形数字！'}
+{'code': 2}
+10023测试通过
+['10024', '增加课程', '展示次序填字母+数字，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"a4"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '展示次序必须为整形数字！'}
+{'code': 2}
+10024测试通过
+['10025', '增加课程', '展示次序填标点符号逗号，其他正常填写', '报错，展示次序必须为数字', 'add', '{\n  "name":"大学英语",\n  "desc":"大学英语课程",\n  "display_idx":"0"\n}\n', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '同名课程存在'}
+{'code': 2}
+10025测试通过
+['10026', '删除课程', '删除的课程ID为空', '报错，课程Id不合法或不存在', 'delete', '{"id":""}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10026测试通过
+['10027', '删除课程', '删除的课程ID为空格', '报错，课程Id不合法或不存在', 'delete', '{"id":" "}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10027测试通过
+['10028', '删除课程', '删除的课程ID有特殊字符#', '报错，课程Id不合法或不存在', 'delete', '{"id":"#"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10028测试通过
+['10029', '删除课程', '删除的课程ID有特殊字符%', '报错，课程Id不合法或不存在', 'delete', '{"id":"%"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10029测试通过
+['10030', '删除课程', '删除的课程ID有特殊字符-', '报错，课程Id不合法或不存在', 'delete', '{"id":"-"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10030测试通过
+['10031', '删除课程', '删除的课程ID为中文', '报错，课程Id不合法或不存在', 'delete', '{"id":"好"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10031测试通过
+['10032', '删除课程', '删除的课程ID为任意数字和字母', '报错，课程Id不合法或不存在', 'delete', '{"id":"122abc"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '传入的id必须为整数'}
+{'code': 2}
+10032测试通过
+['10033', '删除课程', '删除的课程ID为任意数字', '报错，课程Id不合法或不存在', 'delete', '{"id":"123321"}', '{"code":2}', '', '']
+{'retcode': 0}
+{'code': 2}
+10033测试不通过
+['10034', '列出课程', '页码为1，显示条数为20', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"20"}', '{"code":0}', '', '']
+{'retcode': 0, 'retlist': [{'id': 1564, 'name': '大学英语15910187002109', 'desc': '大学英语课程', 'display_idx': 0}, {'id': 1558, 'name': '大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1559, 'name': '大学英语大学英语大学英语大学英语大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1560, 'name': '大学英语大学英语大学', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1561, 'name': '大', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1563, 'name': '大学英语15910186991780', 'desc': '大学英语课程', 'display_idx': 500}, {'id': 1562, 'name': '大学英语15910186971469', 'desc': '大学英语课程', 'display_idx': 999}], 'total': 7}
+{'code': 0}
+10034测试通过
+['10035', '列出课程', '页码为空，显示条数正常填写', '报错，页码不能为空', 'list', '{"pagenum":"","pagesize":"20"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码或者每页显示数据条数错误'}
+{'code': 2}
+10035测试通过
+['10036', '列出课程', '页码为1，显示条数为空', '报错，显示条数不能为空', 'list', '{"pagenum":"1","pagesize":""}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码或者每页显示数据条数错误'}
+{'code': 2}
+10036测试通过
+['10037', '列出课程', '页码为0，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"0","pagesize":"20"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码或者每页显示数据条数错误'}
+{'code': 2}
+10037测试通过
+['10038', '列出课程', '页码为-1，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"-1","pagesize":"20"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码必须为数字'}
+{'code': 2}
+10038测试通过
+['10039', '列出课程', '页码为字母，显示条数为20', '报错，页码必须大于0', 'list', '{"pagenum":"a","pagesize":"20"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码或者每页显示数据条数错误'}
+{'code': 2}
+10039测试通过
+['10040', '列出课程', '页码为很大的数，显示条数为20', '报错，页码超过显示范围', 'list', '{"pagenum":"1000","pagesize":"20"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '页码或者每页显示数据条数错误'}
+{'code': 2}
+10040测试通过
+['10041', '列出课程', '页码为1，显示条数0', '报错，显示条数必须大于0', 'list', '{"pagenum":"1","pagesize":"0"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '每页显示条数必须大于0'}
+{'code': 2}
+10041测试通过
+['10042', '列出课程', '页码为1，显示条数1', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"1"}', '{"code":0}', '', '']
+{'retcode': 0, 'retlist': [{'id': 1564, 'name': '大学英语15910187002109', 'desc': '大学英语课程', 'display_idx': 0}], 'total': 7}
+{'code': 0}
+10042测试通过
+['10043', '列出课程', '页码为1，显示条数500', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"500"}', '{"code":0}', '', '']
+{'retcode': 0, 'retlist': [{'id': 1564, 'name': '大学英语15910187002109', 'desc': '大学英语课程', 'display_idx': 0}, {'id': 1558, 'name': '大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1559, 'name': '大学英语大学英语大学英语大学英语大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1560, 'name': '大学英语大学英语大学', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1561, 'name': '大', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1563, 'name': '大学英语15910186991780', 'desc': '大学英语课程', 'display_idx': 500}, {'id': 1562, 'name': '大学英语15910186971469', 'desc': '大学英语课程', 'display_idx': 999}], 'total': 7}
+{'code': 0}
+10043测试通过
+['10044', '列出课程', '页码为1，显示条数1000', '正确，返回成功', 'list', '{"pagenum":"1","pagesize":"1000"}', '{"code":0}', '', '']
+{'retcode': 0, 'retlist': [{'id': 1564, 'name': '大学英语15910187002109', 'desc': '大学英语课程', 'display_idx': 0}, {'id': 1558, 'name': '大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1559, 'name': '大学英语大学英语大学英语大学英语大学英语', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1560, 'name': '大学英语大学英语大学', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1561, 'name': '大', 'desc': '大学英语课程', 'display_idx': 4}, {'id': 1563, 'name': '大学英语15910186991780', 'desc': '大学英语课程', 'display_idx': 500}, {'id': 1562, 'name': '大学英语15910186971469', 'desc': '大学英语课程', 'display_idx': 999}], 'total': 7}
+{'code': 0}
+10044测试通过
+['10045', '列出课程', '页码为1，显示条数1001', '报错，显示条数必须大于0', 'list', '{"pagenum":"1","pagesize":"1001"}', '{"code":2}', '', '']
+{'retcode': 2, 'reason': '每页显示条数不能大于1000'}
+{'code': 2}
+10045测试通过
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test003</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.2')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: {'retcode': 0, 'id': 1565}
+&gt;&gt;&gt;&gt;&gt;新增课程测试通过1
+&gt;&gt;&gt;&gt;&gt;新增课程测试通过3
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>共</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
